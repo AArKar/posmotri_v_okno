@@ -321,6 +321,7 @@ input[type="checkbox"] {
   flex-direction: column;
   gap: 30px;
   overflow: auto; 
+  
 }
 
 p.content__video-card-description {
