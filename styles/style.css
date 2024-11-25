@@ -36,3 +36,311 @@ ul,
 ol {
   list-style: none;
 }
+
+/*Весь контент*/
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center end;
+  position: relative;
+  top: 133px;
+  left: 30px;
+  gap: 30px;
+}
+
+.result {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 13px;
+}
+
+  /*видео*/
+.result__video-container {
+  position: relative;
+}
+
+.result__video {
+  width: 711px;
+  height: 386px;
+  object-fit: cover;
+}
+
+    /*фильтры под видео*/
+
+
+    .button{
+      align-items: flex-end;
+    }
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+fieldset {
+  border: none;
+}
+
+/*выбор города*/
+.search-form__textfield {
+  width: 225px;
+  height: 27px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);/*rgba(255, 255, 255, 0.7);*/
+  background: transparent;
+  border: none;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  appearance: none;
+}
+
+
+
+.search-form__label:has(input[type="text"]):active {
+  border-top: none;
+  outline: 1px solid #FFFFFF;
+
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+/*чекбоксы*/
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: normal;
+}
+
+.search-form__label {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.search-form__pseudo-checkbox {
+  position: relative;
+  display: flex;
+  width: 19px;
+  height: 19px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+}
+
+input[type="checkbox"]:checked + span::after,
+.search-form__pseudo-checkbox:active::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #FFFFFF;
+}
+
+input[type="checkbox"] {
+  text-decoration: underline;
+}
+
+.search-form__label:has(input[type="checkbox"]):hover {
+  text-decoration: underline;
+}
+
+.search-form__label:has(input[type="checkbox"]):focus,
+.search-form__textfield:focus,
+.search-form__label:focus{
+  outline: none;
+}
+
+.search-form__label:has(input[type="checkbox"]):focus-visible {
+  outline: 1px solid #FFFFFF;
+}
+
+
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  width: 194px;
+  height: 34px;
+  top: 20px;
+  left: 517px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+  /*Заголовок*/
+
+.title {
+  height: 210px;
+  color: #FFFFFF;
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: 70.5px;
+}
+
+.content__accent {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+  /*карточки*/
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__card-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.content__video-card:focus{
+  outline: none;
+}
+
+.content__video-card:focus-within {
+  outline: 1px solid #FFFFFF;
+}
+
+
+.content__video-card {
+  display: flex;
+  width: 397px;
+  min-height: 107px;
+  justify-content: space-between;
+  /*gap: 10px;*/
+  padding: 0px 2px;
+}
+
+.content__video-card:not(:first-child) {
+  padding: 2px;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.content__video-card:focus {
+  outline: none;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #FFFFFF;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*gap: 6px;*/
+  color: #FFFFFF;
+  font-family: Oswald;
+  font-style: normal;
+  overflow: hidden;
+}
+
+      /*заголовок в карточках*/
+
+.content__video-card-title {
+  /*font-size: 30px;*/
+  font-weight: normal;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+      /*основной текст в карточках*/
+
+.content__list {
+  position: relative;
+  display: flex;
+  min-width: 420px;
+  height: 298px;
+  flex-direction: column;
+  gap: 30px;
+  overflow: auto; 
+}
+
+p.content__video-card-description {
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: normal;
+}
+
+p.content__video-card-description::first-letter {
+  text-transform: uppercase;
+}
+
+    /*картинка в карточках*/
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.more-button {
+  width: 399px;
+}
