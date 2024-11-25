@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -40,14 +41,13 @@ ol {
 /*Весь контент*/
 
 .content {
-  display: grid;
+  display: grid; 
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   place-items: center end;
   position: relative;
-  top: 133px;
-  left: 30px;
   gap: 30px;
+  margin: auto;
 }
 
 .result {
@@ -321,7 +321,7 @@ input[type="checkbox"] {
   flex-direction: column;
   gap: 30px;
   overflow: auto; 
-  
+
 }
 
 p.content__video-card-description {
