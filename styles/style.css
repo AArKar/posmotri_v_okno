@@ -41,11 +41,17 @@ ol {
 /*Весь контент*/
 
 .content {
-  display: grid; 
-  grid-template-columns: 2fr 1fr;
+ /* display: grid; 
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  place-items: center end;
-  position: relative;
+  /*place-items: center end;
+  align-items: ;
+  justify-items: ;
+  position: relative;*/
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  margin: 30px;
   gap: 30px;
   margin: auto;
 }
@@ -81,7 +87,9 @@ ol {
   align-items: flex-start;
 }
 
-
+.search-form:has(button[type="submit"]){
+  align-items: flex-end;
+}   ЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁЁ
 
 
 .visually-hidden {
@@ -114,13 +122,17 @@ fieldset {
 
 
 
-.search-form__label:has(input[type="text"]):active {
+.search-form__label:has(input[type="text"]:active) {
   border-top: none;
   outline: 1px solid #FFFFFF;
 
 }
 
-.search-form__textfield:focus-visible {
+.search-form__label:has(input[type="text"]:focus) {
+  outline: none;
+}
+
+.search-form__label:has(input[type="text"]:focus-visible) {
   outline: 1px solid #FFFFFF;
   outline-offset: 2px;
 }
@@ -182,7 +194,7 @@ input[type="checkbox"] {
   outline: none;
 }
 
-.search-form__label:has(input[type="checkbox"]):focus-visible {
+.search-form__label:has(input[type="checkbox"]:focus-visible) {
   outline: 1px solid #FFFFFF;
 }
 
@@ -225,6 +237,8 @@ input[type="checkbox"] {
 
 .content__details {
   display: flex;
+  width: 394px;
+  height: 534px;
   flex-direction: column;
   gap: 25px;
 }
@@ -267,7 +281,7 @@ input[type="checkbox"] {
 
 .content__video-card {
   display: flex;
-  width: 397px;
+  width: 394px;
   min-height: 107px;
   justify-content: space-between;
   /*gap: 10px;*/
@@ -278,16 +292,13 @@ input[type="checkbox"] {
   padding: 2px;
 }
 
-.content__video-card:active {
-  background-color: #545050;
-  text-decoration: none;
-}
 
-.content__video-card:focus {
+
+.content__list:has(.content__list-item:focus) {
   outline: none;
 }
 
-.content__video-card:focus-visible {
+.content__list:has(.content__list-item:focus-visible) {
   outline: 1px solid #FFFFFF;
 }
 
