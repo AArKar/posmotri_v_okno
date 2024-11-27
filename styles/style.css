@@ -294,7 +294,6 @@ button[type="submit"] {
   color: #FFFFFF;
   font-family: 'Oswald', sans-serif;
   font-style: normal;
-
 }
 
       /*заголовок в карточках*/
@@ -319,9 +318,7 @@ button[type="submit"] {
   flex-direction: column;
   gap: 30px;
   overflow: auto; 
-  padding-top: 2px;
-  padding-right: 2px;
-  padding-left: 2px;
+  padding: 2px;
 }
 
 p.content__video-card-description {
