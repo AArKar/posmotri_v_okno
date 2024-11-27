@@ -115,7 +115,6 @@ fieldset {
 .search-form__label:has(input[type="text"]:active) {
   border-top: none;
   outline: 1px solid #FFFFFF;
-
 }
 
 .search-form__label:has(input[type="text"]:focus) {
@@ -188,8 +187,6 @@ input[type="checkbox"] {
   outline: 1px solid #FFFFFF;
 }
 
-
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -229,7 +226,6 @@ button[type="submit"] {
   margin-top: auto;
 }
 
-
 .content__details {
   display: flex;
   min-width: 399px;
@@ -256,13 +252,14 @@ button[type="submit"] {
 
   /*карточки*/
 .content__card-link {
+  display: block;
   text-decoration: none;
+  color: #FFFFFF;
+  margin: 2px;
 }
 
 .content__card-link:hover {
-  color: #FFFFFF;
   text-decoration: underline;
-  font-weight: normal;
 }
 
 .content__list-item:active,
@@ -271,11 +268,15 @@ button[type="submit"] {
   text-decoration: none;
 }
 
-.content__video-card:focus{
+.content__card-link:focus{
   outline: none;
 }
 
-.content__video-card:focus-within {
+/*.content__video-card:focus-within {вввввввввввввввв
+  outline: 1px solid #FFFFFF;
+}*/
+
+.content__card-link:focus-visible {
   outline: 1px solid #FFFFFF;
 }
 
@@ -347,7 +348,7 @@ p.content__video-card-description::first-letter {
 }
 
 li:last-child {
-  margin: 4px;
+  margin: 3px;
 }
 
     /*картинка в карточках*/
