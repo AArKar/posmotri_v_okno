@@ -77,20 +77,11 @@ ol {
 
     /*фильтры под видео*/
 
-
-    .button{
-      align-items: flex-end;
-    }
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.search-form:has(button[type="submit"]){
-  align-items: flex-end;
-}
-
 
 .visually-hidden {
   position: absolute;
@@ -235,9 +226,14 @@ input[type="checkbox"] {
   outline-offset: 2px;
 }
 
+button[type="submit"] {
+  margin-top: auto;
+}
+
+
 .content__details {
   display: flex;
-  width: 394px;
+  min-width: 399px;
   height: 534px;
   flex-direction: column;
   gap: 25px;
@@ -268,6 +264,11 @@ input[type="checkbox"] {
   color: #FFFFFF;
   text-decoration: underline;
   font-weight: normal;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+  text-decoration: none;
 }
 
 .content__video-card:focus{
@@ -327,7 +328,7 @@ input[type="checkbox"] {
 .content__list {
   position: relative;
   display: flex;
-  min-width: 420px;
+  min-width: 399px;
   height: 298px;
   flex-direction: column;
   gap: 30px;
@@ -338,7 +339,7 @@ input[type="checkbox"] {
 p.content__video-card-description {
   font-size: 18px;
   line-height: 17px;
-  font-weight: normal;
+  font-style: normal;
 }
 
 p.content__video-card-description::first-letter {
@@ -351,6 +352,7 @@ p.content__video-card-description::first-letter {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  margin: auto 0;
 }
 
 .more-button {
