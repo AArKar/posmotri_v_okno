@@ -242,6 +242,7 @@ button[type="submit"] {
   /*карточки*/
 .content__card-link {
   display: block;
+  width: 394px;
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -314,6 +315,7 @@ button[type="submit"] {
 .content__list {
   position: relative;
   display: flex;
+  min-width: 420px;
   height: 300px;
   flex-direction: column;
   gap: 30px;
