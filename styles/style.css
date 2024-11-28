@@ -186,6 +186,8 @@ input[type="checkbox"] {
 .button {
   height: 34px;
   color: #FFFFFF;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: normal;
   font-size: 18px;
   border: 1px solid currentColor;
   background: transparent;
@@ -220,7 +222,6 @@ button[type="submit"] {
 
 .content__details {
   display: flex;
-  min-width: 399px;
   flex-direction: column;
   gap: 25px;
 }
@@ -300,6 +301,7 @@ button[type="submit"] {
 
 .content__video-card-title {
   width: 200px;
+  font-size: 30px;
   font-weight: normal;
   text-transform: uppercase;
   overflow-wrap: break-word;
@@ -313,7 +315,6 @@ button[type="submit"] {
 .content__list {
   position: relative;
   display: flex;
-  min-width: 399px;
   height: 298px;
   flex-direction: column;
   gap: 30px;
@@ -347,5 +348,5 @@ li:last-child {
 }
 
 .more-button {
-  width: 399px;
+  width: 100%;
 }
